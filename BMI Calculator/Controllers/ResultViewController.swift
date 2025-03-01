@@ -20,6 +20,8 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bmiLabel.text = bmiValue
+        adviceLabel.text = advice
+       view.backgroundColor = color
     }
 
     @IBAction func recalculatePressed(_ sender: UIButton) {

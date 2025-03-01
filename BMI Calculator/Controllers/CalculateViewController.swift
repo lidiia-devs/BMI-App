@@ -11,7 +11,7 @@ import UIKit
 class CalculateViewController: UIViewController {
     
     var calulatorBrain = CalculatorBrain()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -50,9 +50,8 @@ class CalculateViewController: UIViewController {
        if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultViewController
            destinationVC.bmiValue = calulatorBrain.getBMIValue()
-           destinationVC.advice = calculatorBrain.getAdvice()
-           destinationVC.color = calculatorBrain.getColor()
-           
+           destinationVC.advice = calulatorBrain.getAdvice()
+           destinationVC.color = calulatorBrain.getColor()
         }
     }
 }
