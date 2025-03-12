@@ -24,6 +24,7 @@ class ResultViewController: UIViewController {
        view.backgroundColor = color
     }
 
+    
     @IBAction func recalculatePressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
