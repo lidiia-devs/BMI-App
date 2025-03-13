@@ -9,7 +9,6 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
     var bmiValue: String?
     var advice: String?
     var color: UIColor?
@@ -23,7 +22,6 @@ class ResultViewController: UIViewController {
         adviceLabel.text = advice
        view.backgroundColor = color
     }
-
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
